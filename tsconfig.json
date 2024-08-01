@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "target":                       "es5",
+    "module":                       "es2015",
+
+    "alwaysStrict":                 false,
+    "allowUnreachableCode":         true,
+    "composite":                    true,
+    "declaration":                  true,
+    "emitDeclarationOnly":          true,
+    "isolatedModules":              false,
+    "noErrorTruncation":            true,
+    "noImplicitAny":                true,
+    "noImplicitReturns":            true,
+    "noLib":                        true,
+    "outFile":                      "lib/pxt-common-packages.d.ts",
+    "preserveConstEnums":           true,
+    "rootDir":                      "src/pxt-common-packages/libs",
+    "skipDefaultLibCheck":          true,
+    "skipLibCheck":                 true,
+    "strict":                       false,
+    "strictPropertyInitialization": false,
+    "strictNullChecks":             false,
+    "strictFunctionTypes":          false,
+    "strictBindCallApply":          false,
+    "typeRoots":                    ["./lib"],
+    "types":                        ["pxt-core"],
+    "verbatimModuleSyntax":         false,
+  },
+
+  "references":      [
+    { "path": "./tsconfig.pxt-common.json" }
+  ],
+
+  "include":         [
+    "src/pxt-common-packages/libs/base/*.ts",
+    "src/pxt-common-packages/libs/screen---ext/*.ts",
+    "src/pxt-common-packages/libs/game/constants.ts",
+    "src/pxt-common-packages/libs/game/controllerbutton.ts",
+    "src/pxt-common-packages/libs/game/basesprite.ts",
+    "src/pxt-common-packages/libs/game/sprites.ts",
+    "src/pxt-common-packages/libs/game/sprite.ts",
+    "src/pxt-common-packages/libs/game/*.ts",
+    "src/pxt-common-packages/libs/net/*.ts",
+    "src/pxt-common-packages/libs/music/*.ts",
+    "src/pxt-common-packages/libs/mixer/playable.ts",
+    "src/pxt-common-packages/libs/storyboard/storyboard.ts",
+    "src/pxt-common-packages/libs/*/*.ts",
+  ],
+  "exclude":         [
+    "src/pxt-common-packages/libs/mixer/legacy.ts",
+    "src/pxt-common-packages/libs/music/shims.d.ts",
+    "src/pxt-common-packages/libs/screen/targetoverrides.ts",
+    "src/pxt-common-packages/libs/screen---ext/shims.d.ts",
+    "**/*test.ts",
+    "**/*---light/*",
+    "**/*---linux/*",
+    "**/*---st7735/*",
+    "**/*---none/*",
+    "**/*---pwm/*",
+  ]
+}

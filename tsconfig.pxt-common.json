@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target":               "ES5",
+    "noImplicitAny":        true,
+    "noImplicitReturns":    true,
+    "rootDir":              "src/pxt/libs/pxt-common",
+    "newLine":              "LF",
+    "sourceMap":            false,
+    "incremental":          true,
+    "skipLibCheck":         true,
+
+    "composite":            true,
+    "declaration":          true,
+    "emitDeclarationOnly":  true,
+    "isolatedModules":      false,
+    "noLib":                true,
+    "outFile":              "lib/pxt-common.d.ts",
+    "preserveConstEnums":   true,
+    "typeRoots":            [],
+    "types":                [],
+    "verbatimModuleSyntax": false
+  },
+
+  "include":         [
+    "src/pxt/libs/pxt-common/*.ts"
+  ]
+}

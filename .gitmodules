@@ -1,0 +1,6 @@
+[submodule "src/pxt-common-packages"]
+	path = src/pxt-common-packages
+	url = https://github.com/microsoft/pxt-common-packages.git
+[submodule "src/pxt"]
+	path = src/pxt
+	url = https://github.com/microsoft/pxt.git
